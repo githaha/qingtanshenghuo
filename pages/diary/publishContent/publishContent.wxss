@@ -1,0 +1,61 @@
+/* pages/diary/publishContent/publishContent.wxss */
+.publishContent{
+  position: relative;
+  width: 90%;
+  margin: 20px 5% 0px;
+  border: solid 1rpx rgb(240, 240, 240);
+  border-radius: 2rpx;
+  overflow: hidden;
+}
+.publishText{
+  position: relative;
+  font-size: 28rpx;
+  border-radius: 2px;
+  height: 300rpx;
+  width: calc(100% - 10px);
+  padding: 10px;
+
+}
+
+.forumImgs{
+  display:flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  width: 100%;
+  /* margin-top: 5px; */
+  height: auto;
+  background-color:rgb(255, 255, 255);
+  border-top: 1px solid rgb(241, 241, 241);
+}
+.forumItemImage{
+  display: inline-block;
+  width: 150rpx;
+  height: 150rpx;
+  margin: 10rpx;
+  background-color: rgb(244, 245, 244);
+}
+.publishSelectBar{
+  display: flex;
+  justify-content: flex-start;
+  align-content: center;
+  height: 50px;
+  width: 100%;
+  margin-top: 10px;
+  background-color: rgb(245, 244, 244);
+}
+.selectBarImg{
+  display: inline-block;
+  margin-top: 5px;
+  width: 40px;
+  height: 40px;
+  margin-left: 10px;
+}
+.publishPost{
+  position: absolute;
+  margin-top: 8px;
+  right: 10px;
+  width: 66px;
+  height: 34px;
+  background-color: lightgray;
+}

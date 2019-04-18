@@ -1,0 +1,23 @@
+/* components/DrUserIntro/DrUserIntro.wxss#393939, #7a7979 */
+.DrUserIntro{
+  display: inline-flex;
+  justify-content: flex-start;
+  padding-left: 20rpx;
+  height: 120rpx;
+}
+.userIntroAvatar{
+  margin: 10rpx 15rpx 0 10rpx;
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 40rpx;
+  background-color: rgb(212, 211, 211);
+}
+.userIntroNickname{
+  font-size: 30rpx;
+  color: #393939;
+}
+.userIntroSubInfo
+{
+  font-size: 20rpx;
+  color:#7a7979;
+}

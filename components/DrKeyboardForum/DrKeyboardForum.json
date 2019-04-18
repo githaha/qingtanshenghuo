@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "i-badge":"/utils/dist/badge/index"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "pages": [
+    "pages/home/homeMain/homeIndex",
+    "pages/tribe/tribeMain/tribeIndex",
+    "pages/myCenter/myCenterMain/myCenterIndex",
+    "pages/knowledge/knowledgeMain/knowledgeIndex",
+    "pages/diary/diaryMain/diaryIndex",
+    "pages/diary/diarySub/diaryDetail",
+    "pages/myCenter/userInfoGuestCenter/userInfoGuestCenter",
+    "pages/diary/publishContent/publishContent"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#59bfc0",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#6666",
+    "selectedColor": "#f10b2e",
+    "list": [
+      {
+        "pagePath": "pages/home/homeMain/homeIndex",
+        "text": "首页",
+        "iconPath": "/common/icons/home.png",
+        "selectedIconPath": "/common/icons/homeSelected.png"
+      },
+      {
+        "pagePath": "pages/tribe/tribeMain/tribeIndex",
+        "text": "瘦身部落",
+        "iconPath": "/common/icons/tribe.png",
+        "selectedIconPath": "/common/icons/tribeSelected.png"
+      },
+      {
+        "pagePath": "pages/diary/diaryMain/diaryIndex",
+        "text": "瘦身日记",
+        "iconPath": "/common/icons/diary.png",
+        "selectedIconPath": "/common/icons/diarySelected.png"
+      },
+      {
+        "pagePath": "pages/knowledge/knowledgeMain/knowledgeIndex",
+        "text": "瘦身知识",
+        "iconPath": "/common/icons/knoledge.png",
+        "selectedIconPath": "/common/icons/knoledgeSelected.png"
+      },
+      {
+        "pagePath": "pages/myCenter/myCenterMain/myCenterIndex",
+        "text": "我的",
+        "iconPath": "/common/icons/myCenter.png",
+        "selectedIconPath": "/common/icons/myCenterSelected.png"
+      }
+    ]
+  }
+}

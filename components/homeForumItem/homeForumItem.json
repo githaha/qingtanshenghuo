@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "labAndImgItem":"../labAndImgItem/labAndImgItem",
+    "DrUserIntro": "/components/DrUserIntro/DrUserIntro"
+  }
+}

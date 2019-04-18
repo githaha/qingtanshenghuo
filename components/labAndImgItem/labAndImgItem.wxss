@@ -1,0 +1,19 @@
+/* components/labAndImgItem/labAndImgItem.wxss */
+.itemLabAndImg{
+  display: flex;
+  justify-content: center;
+  height: 50rpx;
+  width: auto;
+  /* background-color: rgb(240, 238, 238); */
+}
+.item_img{
+  height: 40rpx;
+  width: 40rpx;
+  margin: 5rpx;
+}
+.item_lab{
+  margin-left: 5rpx;
+  font-size: 30rpx;
+  vertical-align: middle;
+  color: darkgray;
+}

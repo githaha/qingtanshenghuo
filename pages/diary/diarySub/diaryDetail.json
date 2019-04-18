@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "DrUserIntro":"/components/DrUserIntro/DrUserIntro",
+    "DrKeyboardForum":"/components/DrKeyboardForum/DrKeyboardForum"
+  }
+}

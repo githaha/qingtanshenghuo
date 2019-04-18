@@ -1,0 +1,36 @@
+/* components/DrPubTypeShow/DrPubTypeShow.wxss */
+.context{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  width: 240rpx;
+  height: auto;
+  top: 30px;
+  right: 30px;
+  background-color: rgb(216, 214, 214);
+  border-radius: 8px;
+  z-index: 200;
+}
+.labText{
+  font-size: 26rpx;
+  color: rgb(66, 66, 66);
+  font-weight: 44rpx;
+  height: 44rpx;
+  margin-bottom: -10rpx;
+  
+}
+.itemCell{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 96%;
+  height: 64rpx;
+}
+.itemCell image{
+  margin-left: 10rpx;
+  margin-right: 20rpx;
+  width: 44rpx;
+  height: 44rpx;
+}

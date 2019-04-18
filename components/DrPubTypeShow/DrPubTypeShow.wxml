@@ -1,0 +1,13 @@
+<!--components/DrPubTypeShow/DrPubTypeShow.wxml-->
+<view class="context" wx:if="{{is_show}}">
+  <view class='itemCell' data-typeSelected="typeVideo" bindtap='slectedType'>
+  <image src='/common/icons/camera.png'/><label class='labText'> 发视频</label>
+   </view>
+
+  <view style='height:1rpx; background-color:lightslategray; width:80%'></view>
+   
+   <view class='itemCell' bindtap='slectedType' data-typeSelected="typeTW">
+    <image src='/common/icons/tuwen.png'/><label class='labText'> 发图文</label>
+  </view>
+ 
+</view>

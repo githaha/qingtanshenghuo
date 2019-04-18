@@ -1,0 +1,45 @@
+/* components/DrKeyboardForum/DrKeyboardForum.wxss */
+.keyboardForum{
+  z-index: 2000;
+  display: flex;
+  height: 40px;
+  width: 100%;
+  background:white;
+  border-top: solid 1rpx #eee;
+  
+}
+.keyboardInput{
+  display: inline-block;
+  width: 40%;
+  height: 30px;
+  margin: 5px 10px 4px 15px;
+  border: solid 1px rgb(233, 233, 233);
+  border-radius: 18px;
+  padding-left: 4px;
+  font-size: 26rpx;
+}
+.badgeImg{
+
+  margin: 5px 0px 5px 20px;
+  width: 30px;
+  height: 30px;
+  /* background: rgb(102, 62, 62); */
+  display: inline-block;
+}
+
+.keyboardZan{
+margin-top: 5px;
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  margin-left: 60rpx;
+  
+}
+.keyboardShare{
+  position: absolute;
+  right: 35rpx;
+  margin-top: 5px;
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+}

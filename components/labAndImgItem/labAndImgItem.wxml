@@ -1,0 +1,4 @@
+<view class='itemLabAndImg'>
+  <image class='item_img' src="{{item_img}}"></image>
+  <label class='item_lab'>{{item_lab}}</label> 
+</view>

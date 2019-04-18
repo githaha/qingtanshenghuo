@@ -1,0 +1,26 @@
+/* pages/diary/diarySub/diaryDetail.wxss */
+.forumDetailTitle{
+  font-size: 34rpx ;
+  color: rgb(32, 32, 32);
+  margin-left: 40rpx;
+}
+.DiaryDrUserIntro{
+  display: flex;
+  margin-top: 40rpx;
+}
+.attention{
+  width: 140rpx;
+  height: 60rpx;
+  color: white;
+  background-color:#2b85e4;
+}
+.content{
+  margin: 20px 20rpx 20rpx;
+  color: rgb(85, 85, 85);
+  font-size: 28rpx;
+}
+.DetailKeyboardForum{
+  position: fixed;
+  bottom: 0rpx;
+  width: 100%;
+}

@@ -1,0 +1,9 @@
+<!--components/DrKeyboardForum/DrKeyboardForum.wxml-->
+<view class='keyboardForum'>
+<input class='keyboardInput' placeholder='{{placeText}}' type='text'confirm-type="send"></input>
+<i-badge count="101">
+  <image class='badgeImg' src='/common/icons/comment.png'></image>
+</i-badge>
+<image class='keyboardZan' src='/common/icons/zan.png'></image>
+<image class='keyboardShare' src='/common/icons/share.png'></image>
+</view>

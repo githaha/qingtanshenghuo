@@ -1,0 +1,2 @@
+<!--common/templates/DrSearch.wxml-->
+<input class='searchBar' type='text' placeholder="{{placeholder}}" confirm-type='search'></input>

@@ -1,0 +1,32 @@
+<!--pages/home/homeMain/homeIndex.wxml-->
+<view >
+<view class='homeHead'>
+  <DrSearch placeholder="搜索内容"></DrSearch>
+  <image class='publishEdit' src='/common/icons/publishEdit.png' bindtap='publicShowSelectType'></image>
+</view>
+<!-- 热点帖子 -->
+<view class='homeBanner'>
+
+</view>
+
+<view class='contentList'>
+  <!-- 内容列表 -->
+  <block wx:for="{{listForumData}}" wx:key="item.nickname">
+  <homeForumItem class="contentListCell" 
+  forumContetnShort ="{{item.forumContetnShort}}"
+   nickname="{{item.nickname}}" 
+   avator ="{{item.forumImages}}" 
+   subNickname ="{{item.subNickname}}" 
+   forumImages = "{{item.forumImages}}"
+    zanNum="{{item.zanNum}}"
+    createTime="{{item.createTime}}" 
+    commentNum="{{item.commentNum}}" 
+    shareNum="{{item.shareNum}}"
+  ></homeForumItem>
+  </block>
+</view>
+</view>
+<DrPubTypeShow is_show = "{{showOrHiddleSlectType}}" bindhiddleSelect="hiddleSelectBack"></DrPubTypeShow>
+
+
+
