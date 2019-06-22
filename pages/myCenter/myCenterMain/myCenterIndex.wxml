@@ -1,2 +1,10 @@
-<!--pages/myCenter/myCenterMain/myCenterIndex.wxml-->
-<text>pages/myCenter/myCenterMain/myCenterIndex.wxml</text>
+<DrUserIntro  userAvatar="{{userInfo.userSimple.headerImg}}"
+canClickHeadImg="{{false}}" userNickname="{{userInfo.userSimple.nickname}}" userSubInfo="{{'瘦身顾问'}}"></DrUserIntro>
+<view class='gridViewC'>
+<MyGridLab_lab class="gridIetm" titleUp="{{userInfo.problemCount}}" titleDown="发表" 
+data-index="1" bindtap="clickItem" />
+<MyGridLab_lab class="gridIetm" titleUp="{{userInfo.followCount}}" data-index="2" titleDown="关注" bindtap="clickItem" /> 
+<MyGridLab_lab class="gridIetm" titleUp="{{userInfo.fansCount}}" data-index="3" titleDown="粉丝" bindtap="clickItem" /> 
+<MyGridLab_lab class="gridIetm" data-index="4" titleUp="{{0}}" titleDown="部落" />   
+</view>
+<view class='separatorline'></view>

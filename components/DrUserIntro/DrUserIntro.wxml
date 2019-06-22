@@ -1,6 +1,6 @@
 <!--components/DrUserIntro/DrUserIntro.wxml-->
-<view class='DrUserIntro' catchtap='tapForumItemUserInfo'>
-<image  class='userIntroAvatar' src='{{userAvatar}}'></image>
+<view class='DrUserIntro{{userType}}' catchtap='tapForumItemUserInfo'>
+<image  class='userIntroAvatar{{userType}}' src='{{userAvatar}}'></image>
 <view>
 <view style='display:flex;flex-direction:column'>
 <label class='userIntroNickname'>{{userNickname}}</label>

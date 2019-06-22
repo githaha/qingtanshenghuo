@@ -1,0 +1,71 @@
+<view bindtap='onPageScroll'>
+<!-- 用户信息 -->
+<view class='forumComment' >
+<view class="DiaryDrUserIntro">
+    <DrUserIntro  userAvatar="{{userSimple.headerImg}}" userNickname="{{userSimple.nickname}}" userSubInfo="{{subNickname}}"></DrUserIntro>
+    <button class='attention' size='mini' bindtap='addAction' hidden='{{comment.isFollow}}'>关注</button>
+</view>
+<view class='forumCommentMain' >
+<!-- 评论的内容 -->
+ {{comment.content}}
+<image wx:if="{{problemImageUrl.length}}" class='commentImg' src='{{problemImageUrl}}'></image>
+
+<view class='commentMainSubDetail'>
+<!-- 评论的底部详细信息 -->
+<view>
+<!-- 时间-举报 -->
+<label class='subDetailTime'>{{comment.createTime}}</label>
+<label class='subDetailReport'>·举报</label>
+</view>
+<view class='subDetailZan'>
+<!-- 点赞区域 -->
+<view class='subDetailZanIcons'>
+<!-- 点赞头像 -->
+<block wx:for="{{listCommentLike}}" wx:key="{{item}}">
+<image class='subDetailZanIcon' src='{{item.headerImg}}' mode='aspectFit'></image>
+</block>
+<label class='subDetailZanMore'> {{listCommentLike.length}}人赞过 > </label>
+</view>
+<labAndImgItem class="subDetailZanBtn" item_img="{{comment.isLike?'/common/icons/zans.png':'/common/icons/zan.png'}}" item_lab="{{zanIcons.length}}" catchtap='tapZanEvent'/>
+
+<view>
+<!-- 点赞按钮 -->
+</view>
+</view>
+
+</view>
+</view>
+
+</view>
+
+<view class='forumReplyList'>
+  <block wx:for="{{forumReplyList}}" wx:key="item.createTime">
+  <forumReplyItem 
+  avator="{{item.userSimple.headerImg}}" 
+  userNickname="{{item.userSimple.nickname}}" 
+  zanNum="{{item.likeCount}}" 
+  isLike="{{item.isLike}}" 
+  replyCount="{{item.replyCount}}" 
+  replyContent= "{{item.content}}" 
+  createTime="{{item.createTime}}" 
+  commentId="{{item.id}}" 
+  userId="{{item.userSimple.id}}" 
+  bindtapReplyItem="tapReplyItem" 
+  bindcommentZanEvent="tapZanEvent" 
+  binddeleteComment="deleteComment">
+  <label wx:if="{{item.toUserSimple}}">回复:
+<label class='userName'>{{item.toUserSimple.nickname}}</label>
+</label>
+  </forumReplyItem>
+</block>
+
+</view>
+
+
+
+
+<!-- page -->
+</view>
+<DrKeyboardForum class="DetailKeyboardForum"
+isShowCount ="{{false}}"
+bindconfirm="bindconfirm" placeText="{{replyTo.placeholder}}" focus="{{keyboardShow}}" isLike="{{isZanComment}}" bindforumZanEvent="tapZanEvent"></DrKeyboardForum>

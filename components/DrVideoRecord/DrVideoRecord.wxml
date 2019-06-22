@@ -1,0 +1,29 @@
+<!--components/DrVideoRecord/DrVideoRecord.wxml-->
+
+<view class='container'>
+
+<cover-view class='selectBtnTypeC'>
+<button data-type='camera' class="{{!selectCamera?'btnTypeSelected':'btnTypeNormal'}}" catchtap='clickCameraType'>拍摄</button>
+<button data-type='library' class="{{selectCamera?'btnTypeSelected':'btnTypeNormal'}}" catchtap='clickCameraType'>相册</button>
+</cover-view>
+
+
+<camera wx:if="{{(!selectCamera)}}" class='cameraC'>
+<cover-view class='recordTime'>{{recordTimeStr}}</cover-view>
+<cover-view class='takeVideo' bindtap='takeVideoClick'>
+<cover-image wx:if="{{recordStatusImg.length>0}}" class='recordStatusImg' src='{{recordStatusImg}}'></cover-image>
+</cover-view>
+<cover-view wx:if="{{recordStatus=='reStart'||recordStatus=='finish'}}" class='recordStatusFinish' catchtap='clickFinish'>
+<cover-image src='/common/icons/finishRecord.png'></cover-image>
+<cover-view>完成</cover-view>
+</cover-view>
+</camera>
+
+
+<view wx:elif="{{selectCamera}}" class='libraryC'>
+
+</view>
+
+</view>
+
+

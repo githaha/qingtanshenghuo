@@ -3,6 +3,8 @@
     "DrSearch": "/components/DrSearch/DrSearch",
     "homeForumItem":"/components/homeForumItem/homeForumItem",
     "i-button": "/utils/dist/button/index",
-    "DrPubTypeShow":"/components/DrPubTypeShow/DrPubTypeShow"
+    "DrPubTypeShow":"/components/DrPubTypeShow/DrPubTypeShow",
+    "i-modal": "/utils/dist/button/index",
+    "myGridImg_lab":"/components/MyGrid/myGridImg_lab/myGridImg_lab"
   }
 }

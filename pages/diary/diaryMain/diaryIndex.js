@@ -1,4 +1,5 @@
 // pages/diary/diaryMain/diaryIndex.js
+var forumCommonJs = require("../commonDiary/commonDiary.js");
 Page({
 
   /**
@@ -12,7 +13,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    
   },
 
   /**
@@ -60,7 +61,8 @@ Page({
   /**
    * 用户点击右上角分享
    */
-  onShareAppMessage: function () {
-
-  }
+  onShareAppMessage: function (option) {
+      
+  },
+  
 })

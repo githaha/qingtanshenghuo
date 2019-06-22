@@ -1,23 +1,39 @@
 <!--components/homeForumItem/homeForumItem.wxml-->
-<view class='forumItem' bindtap='tapForumItemCell'>
-<DrUserIntro class="DiaryDrUserIntro" userAvatar="{{avator}}" userNickname="{{nickname}}" userSubInfo="{{subNickname}}"></DrUserIntro>
+<view class="observer" wx:if="{{ observer_status }}"></view>
+<view class='forumItem' bindtap='tapForumItemCell' wx:if="{{ !observer_status }}">
+<DrUserIntro class="DiaryDrUserIntro" userAvatar="{{avator}}" userNickname="{{nickname}}" userSubInfo="{{subNickname}} " userId ="{{userId}}"></DrUserIntro>
 
 <label class="forumItemTopRB">
 {{forumContetnShort}}
 </label>
+<view wx:if="{{contentType=='video'}}" class='videoClass' >
+<!-- <video style="display:{{tab_image=='none'?'block':'none'}};" -->
+<video 
+ src='{{videoSrc}}' 
+id="myVideo"
+play-btn-position='center'
+object-fit='cover' 
+controls="{{true}}"
+auto-pause-if-navigate="{{true}}"
+poster="http://pic.chinaz.com/thumb/2018/0411/2018041115180129.png"
+>
 
+</video>
 
-<view class='forumItemImgs'>
-  <block wx:for="{{forumImages}}">
-    <image class="forumItemImage-{{forumImagesType}}" wx:if="{{item}}" src="{{item}}" lazy-load='true' mode='aspectFill'></image>
-  </block>
-  
 </view>
+
+<view wx:else class="forumItemImg-{{forumImagesType}}">
+  <block wx:for="{{forumImages}}" wx:key="*this">
+    <image class="forumItemImage-{{forumImagesType}}" wx:if="{{item}}" src="{{item}}" lazy-load='true' mode='aspectFill' catchtap='clickImgs' data-src="{{item}}"></image>
+</block>
+</view>
+
+
 <view class='forumItemBom'>
   <label class='forumItemTime'>{{createTime}}</label>
   <view class='forumItemBomR'>
     <labAndImgItem class="forumItemBomLab_Img" item_img ="/common/icons/comment.png" item_lab="{{commentNum}}"/>
-        <labAndImgItem class="forumItemBomLab_Img" item_img ="/common/icons/zan.png" item_lab="{{zanNum}}"/>
+        <labAndImgItem class="forumItemBomLab_Img" item_img ="{{isLike?'/common/icons/zans.png':'/common/icons/zan.png'}}" item_lab="{{zanNum}}" catchtap='tapActive'/>
     <labAndImgItem class="forumItemBomLab_Img" item_img ="/common/icons/share.png" item_lab="{{shareNum}}"/>
 
   </view>

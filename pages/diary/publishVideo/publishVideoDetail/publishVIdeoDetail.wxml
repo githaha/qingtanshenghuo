@@ -1,0 +1,7 @@
+
+<view class='viewC'>
+<video  class='videoRecord' autoplay="{{false}}" src='{{videoSrc}}' controls="{{true}}">
+<textarea auto-height = "{{inputAutoHeigh}}" class='{{videoInputClass}}'  placeholder='分享此刻的心情~' placeholder-class = "placeholderS" bindlinechange = "editInputlinechange" bindinput="textInputChange"></textarea>
+<view class="videoPublish" bindtap='videoPublishClick'>发布</view>
+</video>
+</view>

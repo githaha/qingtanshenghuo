@@ -1,0 +1,84 @@
+/* pages/diary/forumComment/forumComment.wxss */
+
+page{
+  height: 100%;
+}
+.forumComment{
+  position: relative;
+  margin: 10px 0px;
+  border-bottom: solid 1px rgb(235, 233, 233);
+}
+.DiaryDrUserIntro{
+  display: flex;
+  margin-top: 10rpx;
+}
+.attention{
+  position: absolute;
+  right: 20px;
+  width: 140rpx;
+  height: 60rpx;
+  color: white;
+  background-color:#2b85e4;
+}
+.forumCommentMain{
+  margin:0px 20px 5px 40px;
+  font-size: 28rpx;
+}
+.commentImg{
+    width: 40%;
+}
+.commentMainSubDetail{
+  width: 100%;
+  /* background-color: rgb(102, 88, 88); */
+}
+.subDetailTime{
+  height: 30rpx;
+  font-size: 23rpx;
+  color: rgb(84, 85, 87);
+  margin-right: 10rpx;
+}
+.subDetailReport{
+  height: 30rpx;
+  font-size: 23rpx;
+  color: rgb(84, 85, 87);
+}
+.subDetailZan{
+  position: relative;
+  width: 100%;
+  height: 50rpx;
+}
+.subDetailZanIcons{
+  display: inline-flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: flex-start;
+
+}
+.subDetailZanIcon{
+  width: 40rpx;
+  height: 40rpx;
+  margin-right: 3rpx;
+  margin-top: 5rpx;
+  border-radius: 20rpx;
+  border: solid 1rpx rgb(232, 233, 233);
+}
+.subDetailZanMore{
+  display: inline-block;
+  vertical-align:middle;
+  margin-left: 10rpx;
+}
+.subDetailZanBtn{
+  position: absolute;
+  right: 5rpx;
+  height: 40rpx;
+}
+.DetailKeyboardForum{
+  position: fixed;
+  bottom: 0rpx;
+  width: 100%;
+}
+.userName{
+  color: rgb(141, 165, 243);
+  font-size: 26rpx;
+  margin-right: 5px;
+}

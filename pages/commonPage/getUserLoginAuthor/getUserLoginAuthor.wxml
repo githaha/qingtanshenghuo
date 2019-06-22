@@ -1,0 +1,16 @@
+<!--pages/commonPage/getUserLoginAuthor/getUserLoginAuthor.wxml-->
+<view class='pageIndex'>
+  <view class ="miniProgramInfo">
+    <image class='miniInfoIcon' src='/common/images/qingtanIcon.jpg'></image>
+    <label style='font-size:20px;margin-top:10px'>轻碳生活</label>
+  </view>
+  <view>
+  </view>
+  <label style='margin:20px 10%;font-size: 15px'>使用以下账户登录:</label>
+<view class='userInfo'>
+  <open-data type="userAvatarUrl" style="display: inline-block; width:30px;height:30px; margin-right:10px"></open-data> <open-data type="userNickName"></open-data>
+</view>
+  <button type='primary' open-type='getUserInfo' class='authorBtn' bindgetuserinfo='getUserAuthor'>微信快速登录</button>
+
+
+</view>

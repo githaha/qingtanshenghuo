@@ -2,31 +2,46 @@
 <view >
 <view class='homeHead'>
   <DrSearch placeholder="搜索内容"></DrSearch>
-  <image class='publishEdit' src='/common/icons/publishEdit.png' bindtap='publicShowSelectType'></image>
+  <image class='publishEdit' src='/common/icons/publishEdit.png' bindtap='publicShowSelectType'/>
 </view>
 <!-- 热点帖子 -->
 <view class='homeBanner'>
+<myGridImg_lab class="myGridImgItem" imgSrc="/common/icons/calendar.jpg" title="瘦身知识" data-typec="typeFit" bindtap="tapItem"/>
+<myGridImg_lab class="myGridImgItem" imgSrc="/common/icons/tree.jpg" title="减肥食谱" data-typec="typeFoodList" bindtap="tapItem"/>
+<myGridImg_lab class="myGridImgItem" imgSrc="/common/icons/bread.jpg" title="瘦身小工具" data-typec="typeFitnessTool" bindtap="tapItem"/>
+<myGridImg_lab class="myGridImgItem" imgSrc="/common/icons/bike.jpg" title="瘦身问答"/>
+<myGridImg_lab class="myGridImgItem" imgSrc="/common/icons/water.jpg" title="我的圈子"/>
+<myGridImg_lab class="myGridImgItem" imgSrc="/common/icons/light.jpg" title="附近"/>
+<myGridImg_lab class="myGridImgItem" imgSrc="/common/icons/ege.jpg" title="打卡"/>
+
 
 </view>
 
 <view class='contentList'>
   <!-- 内容列表 -->
-  <block wx:for="{{listForumData}}" wx:key="item.nickname">
+  <block wx:for="{{listForumData}}" wx:key="{{item.nickname}}">
   <homeForumItem class="contentListCell" 
   forumContetnShort ="{{item.forumContetnShort}}"
    nickname="{{item.nickname}}" 
-   avator ="{{item.forumImages}}" 
+   avator ="{{item.avator}}" 
    subNickname ="{{item.subNickname}}" 
    forumImages = "{{item.forumImages}}"
+   forumImagesOrigin = "{{item.forumImagesOrigin}}"
     zanNum="{{item.zanNum}}"
     createTime="{{item.createTime}}" 
     commentNum="{{item.commentNum}}" 
     shareNum="{{item.shareNum}}"
+    userId="{{item.userId}}"
+    idd="{{item.idd}}"
+    isLike="{{item.isLike}}"
+    bindforumZanEvent="clickForumZan" 
+    contentType="{{item.contentType}}"
+    videoSrc="{{item.videoSrc}}" 
+    hoverImg ="{{item.hoverImg}}"
+    bindplayVideo="playVideoStart"
   ></homeForumItem>
   </block>
 </view>
 </view>
-<DrPubTypeShow is_show = "{{showOrHiddleSlectType}}" bindhiddleSelect="hiddleSelectBack"></DrPubTypeShow>
-
-
-
+<DrPubTypeShow is_show = "{{showOrHiddleSlectType}}" bindhiddleSelect="hiddleSelectBack">
+</DrPubTypeShow>

@@ -1,1 +1,36 @@
-/* pages/tribe/tribeMain/tribeIndex.wxss */
+page{
+  background: rgba(245, 246, 247, 0.856);
+}
+.swiper{
+  position: relative;
+  margin-top: 20rpx;
+  width: 100%;
+  height: 250rpx;
+}
+.wiper-itemIn{
+  width: 92%;
+  height: 250rpx;
+  margin-left: 4%;
+}
+.circleC{
+  background: white;
+  width: 96%;
+  margin: 20rpx 2%;
+  height: 180rpx;
+  border-radius: 5rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.myCircle{
+  width: 46%;
+  height: 160rpx;
+  margin-right: 2%;
+  background: rgb(172, 133, 184);
+}
+
+.buildCircle{
+  width: 46%;
+  height: 160rpx;
+  background: rgb(228, 204, 125);
+}

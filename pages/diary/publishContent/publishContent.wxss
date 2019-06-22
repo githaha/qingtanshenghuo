@@ -46,9 +46,9 @@
 }
 .selectBarImg{
   display: inline-block;
-  margin-top: 5px;
-  width: 40px;
-  height: 40px;
+  margin-top: 10px;
+  width: 30px;
+  height: 30px;
   margin-left: 10px;
 }
 .publishPost{

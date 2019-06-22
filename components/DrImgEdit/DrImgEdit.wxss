@@ -1,0 +1,24 @@
+/* components/DrImgEdit.wxss */
+.editView{
+  position: relative;
+  width: 150rpx;
+  height: 150rpx;
+}
+.editImg{
+  position: absolute;
+  display: inline-block;
+  width: 86%;
+  height: 86%;
+  margin-top: 10%;
+  background-color: lightgray;
+}
+.deleBtn{
+  position: absolute;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  right: 1px;
+  top: 1px;
+  /* border: 1px solid red;
+  border-radius: 12px; */
+}

@@ -1,0 +1,59 @@
+/* pages/diary/publishVideo/publishVideoDetail/publishVIdeoDetail.wxss */
+page{
+  width: 100%;
+  height: 100%;
+}
+.viewC{
+  position: relative;
+  background: black;
+  width: 100%;
+  height: 100%;
+}
+.videoRecord{
+  width: 100%;
+  height: 100%;
+}
+
+.videoInputSingline{
+  height: 80rpx;
+  width: 80%;
+  color: white;
+  font-size: 33rpx;
+  margin-top: 120%;
+  margin-left: 10%;
+  background: rgb(59, 54, 54);
+  border-radius: 10rpx;
+  opacity: 0.7;
+  z-index: 1000;
+}
+.videoInputDef{
+  width: 80%;
+  color: white;
+  font-size: 33rpx;
+  margin-top: 120%;
+  margin-left: 10%;
+  background: rgb(59, 54, 54);
+  border-radius: 10rpx;
+  opacity: 0.7;
+  z-index: 1000;
+}
+.placeholderS{
+  color: white;
+  font-size: 33rpx;
+  padding: 5px;
+}
+.videoPublish{
+  width: 60%;
+  height: 80rpx;
+  line-height: 80rpx;
+  background: rgba(199, 70, 38, 0.897);
+  font-size: 40rpx;
+  color: white;
+  font-weight: bold;
+  margin-top: 20rpx;
+  margin-left: 30%;
+  text-align: center;
+  vertical-align: center;
+  z-index: 1000;
+
+}

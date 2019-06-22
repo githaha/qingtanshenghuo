@@ -1,3 +1,6 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "DrUserIntro": "/components/DrUserIntro/DrUserIntro",
+    "MyGridLab_lab": "/components/MyGrid/myGridlab_Lab/myGridLab_lab"
+  }
 }

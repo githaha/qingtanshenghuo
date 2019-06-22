@@ -1,9 +1,13 @@
 <!--components/DrKeyboardForum/DrKeyboardForum.wxml-->
 <view class='keyboardForum'>
-<input class='keyboardInput' placeholder='{{placeText}}' type='text'confirm-type="send"></input>
-<i-badge count="101">
+<input class='keyboardInput' placeholder='{{placeText}}' type='text'confirm-type="send" bindconfirm='bindconfirm' focus="{{focus}}" value='{{inputValue}}'></input>
+
+<i-badge wx:if="{{isShowCount}}" count="{{commentNum}}">
   <image class='badgeImg' src='/common/icons/comment.png'></image>
 </i-badge>
-<image class='keyboardZan' src='/common/icons/zan.png'></image>
-<image class='keyboardShare' src='/common/icons/share.png'></image>
+<image class='keyboardZan' src="{{isLike?'/common/icons/zans.png':'/common/icons/zan.png'}}" bindtap='tapZanEvent'></image>
+<button class='keyboardShare noborderbutton' open-type='share'>
+<image class='keyboardImg' src='/common/icons/share.png'></image>
+</button>
+
 </view>

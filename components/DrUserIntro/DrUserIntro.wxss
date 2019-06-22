@@ -5,11 +5,24 @@
   padding-left: 20rpx;
   height: 120rpx;
 }
+.DrUserIntro-min{
+  display: inline-flex;
+  justify-content: flex-start;
+  padding-left: 20rpx;
+  height: 70rpx;
+}
 .userIntroAvatar{
   margin: 10rpx 15rpx 0 10rpx;
   width: 80rpx;
   height: 80rpx;
   border-radius: 40rpx;
+  background-color: rgb(212, 211, 211);
+}
+.userIntroAvatar-min{
+  margin: 10rpx 15rpx 0 10rpx;
+  width: 50rpx;
+  height: 50rpx;
+  border-radius: 25rpx;
   background-color: rgb(212, 211, 211);
 }
 .userIntroNickname{

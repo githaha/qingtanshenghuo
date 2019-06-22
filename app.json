@@ -7,13 +7,31 @@
     "pages/diary/diaryMain/diaryIndex",
     "pages/diary/diarySub/diaryDetail",
     "pages/myCenter/userInfoGuestCenter/userInfoGuestCenter",
-    "pages/diary/publishContent/publishContent"
+    "pages/diary/publishContent/publishContent",
+    "pages/commonPage/getUserLoginAuthor/getUserLoginAuthor",
+    "pages/diary/forumComment/forumComment",
+    "pages/diary/publishVideo/publishVideo",
+    "pages/diary/publishVideo/publishVideoDetail/publishVIdeoDetail",
+    "pages/myCenter/myCenterSub/userForumList/userForumList",
+    "pages/myCenter/myCenterSub/userFollows/userFollows",
+    "pages/myCenter/myCenterSub/userFans/userFans",
+    "pages/tribe/tribeSub/createTribe/createTribe",
+    "pages/home/homeSub/fitnessKnowledge/fitnessKnowledge",
+    "pages/home/homeSub/fitnessKnowDetail/fitnessKnowDetail",
+    "pages/home/homeSub/fitnessFood/fitnessFood",
+    "pages/home/homeSub/fitnessFoodDetail/fitnessFoodDetail",
+    "pages/home/homeSub/fitnessTool/fitnessTool"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#59bfc0",
     "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle": "black"
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh": true
+  },
+  "networkTimeout": {
+    "request": 5000,
+    "downloadFile": 10000
   },
   "tabBar": {
     "color": "#6666",
@@ -21,7 +39,7 @@
     "list": [
       {
         "pagePath": "pages/home/homeMain/homeIndex",
-        "text": "首页",
+        "text": "发现",
         "iconPath": "/common/icons/home.png",
         "selectedIconPath": "/common/icons/homeSelected.png"
       },
@@ -32,23 +50,12 @@
         "selectedIconPath": "/common/icons/tribeSelected.png"
       },
       {
-        "pagePath": "pages/diary/diaryMain/diaryIndex",
-        "text": "瘦身日记",
-        "iconPath": "/common/icons/diary.png",
-        "selectedIconPath": "/common/icons/diarySelected.png"
-      },
-      {
-        "pagePath": "pages/knowledge/knowledgeMain/knowledgeIndex",
-        "text": "瘦身知识",
-        "iconPath": "/common/icons/knoledge.png",
-        "selectedIconPath": "/common/icons/knoledgeSelected.png"
-      },
-      {
         "pagePath": "pages/myCenter/myCenterMain/myCenterIndex",
         "text": "我的",
         "iconPath": "/common/icons/myCenter.png",
         "selectedIconPath": "/common/icons/myCenterSelected.png"
       }
     ]
-  }
+  },
+  "sitemapLocation": "sitemap.json"
 }

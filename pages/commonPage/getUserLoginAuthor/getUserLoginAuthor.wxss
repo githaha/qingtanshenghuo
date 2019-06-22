@@ -1,0 +1,39 @@
+/* pages/commonPage/getUserLoginAuthor/getUserLoginAuthor.wxss */
+.pageIndex{
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.miniProgramInfo{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin: 20px 10px;
+  
+}
+.miniInfoIcon{
+  display: inline-block;
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 2px;
+  background-color: lightblue;
+  margin-right: 10px;
+}
+.authorContent{
+  width: 80%;
+  height: auto;
+  font-size: 20px;
+
+}
+.authorBtn{
+  border-radius: 20rpx;
+  width: 60%;
+  height: 80rpx;
+  margin: 60rpx 20%;
+}
+.userInfo{
+  display: flex;
+  width: 80%;
+  height: 60px;
+  margin-left: 10%;
+}

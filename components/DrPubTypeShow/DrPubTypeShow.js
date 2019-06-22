@@ -35,7 +35,7 @@ Component({
             })
           } else if (info == "typeVideo") {
             wx.navigateTo({
-              url: '/pages/diary/publishContent/publishContent',
+              url: '/pages/diary/publishVideo/publishVideo',
             })
           }
       }

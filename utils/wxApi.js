@@ -27,14 +27,25 @@ function wxPromisify(fn,scope){
  * 封装request
  */
 var wxrequest = wxPromisify(wx.request);
-function wxRequest(options){
+function wxRequest(options,loadText,showLoading=true){
+  if (showLoading){
+  var loading = typeof(loadText)=='undefined'?"正在加载":loadText;
+  wx.showLoading({
+    title: loading,
+  })
+  }
   return wxrequest(options).then(res =>{
+    wx.hideLoading();
     var data = res.data;
     return Promise.resolve(data);
   }).catch(err =>{
+    wx.hideLoading();
     return Promise.reject(err);
   })
 }
+
+
+
 module.exports = {
   wxPromisify: wxPromisify,
   wxRequest: wxRequest

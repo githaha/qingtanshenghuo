@@ -1,27 +1,29 @@
-<!--pages/diary/diarySub/diaryDetail.wxml-->
-<!-- 头部标题 -->
-<view>
-<label class='forumDetailTitle'>{{title}}</label>
+<view wx:if="{{problemType==2}}">
+<video
+src='{{videoUrl}}'
+class='videoClass'
+object-fit='cover'
+></video>
+</view>
+
 <view class="DiaryDrUserIntro">
-    <DrUserIntro  userAvatar="" userNickname="瘦身小知名瘦身达人美" userSubInfo="知名瘦身达人"></DrUserIntro>
-    <button class='attention' size='mini'>关注</button>
+    <DrUserIntro  userAvatar="{{avator}}" userNickname="{{nickname}}" userSubInfo="{{subNickname}}" userId ="{{userIdForum}}"></DrUserIntro>
+    <button class='attention' size='mini' bindtap='addAction' hidden='{{btnActionShow}}'>{{isFollow?'已关注':'关注'}}</button>
 </view>
 
 <view class='content'>
-<text> 串烤鸡胸肉最重要的是腌制。腌制可以增加风味，锁住水分，嫩化肉质。肉含有80%水分，油是无法渗透的，但是盐可以。
-1、用于腌制的酱料有酱油，青柠汁，黄糖，大蒜，姜和辣椒，或者可以根据个人口味进行调制。不过最好避免油和卤汁。
-2、将鸡胸肉洗净，切成想要的大小，放进酱料中腌制至少30分钟。串烤鸡胸肉最重要的是腌制。腌制可以增加风味，锁住水分，嫩化肉质。肉含有80%水分，油是无法渗透的，但是盐可以。
-1、用于腌制的酱料有酱油，青柠汁，黄糖，大蒜，姜和辣椒，或者可以根据个人口味进行调制。不过最好避免油和卤汁。
-2、将鸡胸肉洗净，切成想要的大小，放进酱料中腌制至少30分钟。串烤鸡胸肉最重要的是腌制。腌制可以增加风味，锁住水分，嫩化肉质。肉含有80%水分，油是无法渗透的，但是盐可以。
-1、用于腌制的酱料有酱油，青柠汁，黄糖，大蒜，姜和辣椒，或者可以根据个人口味进行调制。不过最好避免油和卤汁。
-2、将鸡胸肉洗净，切成想要的大小，放进酱料中腌制至少30分钟。串烤鸡胸肉最重要的是腌制。腌制可以增加风味，锁住水分，嫩化肉质。肉含有80%水分，油是无法渗透的，但是盐可以。
-1、用于腌制的酱料有酱油，青柠汁，黄糖，大蒜，姜和辣椒，或者可以根据个人口味进行调制。不过最好避免油和卤汁。
-2、将鸡胸肉洗净，切成想要的大小，放进酱料中腌制至少30分钟。</text>
-
+<text>{{forumContent}}</text>
+<view wx:if="{{problemType==1}}" class='contentImgs'>
+  <block wx:for="{{forumImages}}" wx:key="*this">
+    <image class='contentImg' src='{{item}}' mode='widthFix' lazy-load='true'></image>
+  </block>
+</view>
 </view>
 
-
-
-
+<view class='replyList'>
+<block wx:for="{{forumArgument}}" wx:key="item.createTime">
+  <forumReplyItem avator="{{item.userSimple.headerImg}}" userNickname="{{item.userSimple.nickname}}" zanNum="{{item.likeCount}}" isLike="{{item.isLike}}" replyCount="{{item.replyCount}}" replyContent= "{{item.content}}" createTime="{{item.createTime}}" commentId="{{item.idd}}" userId="{{item.userId}}" bindtapReplyItem="tapReplyItem" bindcommentZanEvent="tapZanEvent" binddeleteComment="deleteComment"></forumReplyItem>
+</block>
 </view>
-<DrKeyboardForum class="DetailKeyboardForum"></DrKeyboardForum>
+
+<DrKeyboardForum class="DetailKeyboardForum" commentNum="{{commentNum}}" bindconfirm="bindconfirm" placeText="{{replyTo.placeholder}}" focus="{{keyboardShow}}" isLike="{{isLike}}" bindforumZanEvent="tapZanEvent"></DrKeyboardForum>

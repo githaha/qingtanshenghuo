@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "DrUserIntro": "/components/DrUserIntro/DrUserIntro",
+    "DrKeyboardForum": "/components/DrKeyboardForum/DrKeyboardForum",
+    "forumReplyItem": "/components/forumReplyItem/forumReplyItem",
+      "labAndImgItem": "/components/labAndImgItem/labAndImgItem"
+  },
+
+  "navigationBarTitleText": "评论详情"
+}

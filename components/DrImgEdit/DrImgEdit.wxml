@@ -1,0 +1,5 @@
+<!--components/DrImgEdit.wxml-->
+<view class='editView'>
+<image src='{{imgUrl}}' class='editImg'></image>
+<image class='deleBtn' src='/common/icons/deleteIconR.png' catchtap='deleIconTap'></image>
+</view>

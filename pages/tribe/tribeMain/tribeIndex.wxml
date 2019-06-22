@@ -1,2 +1,29 @@
-<!--pages/tribe/tribeMain/tribeIndex.wxml-->
-<text>pages/tribe/tribeMain/tribeIndex.wxml</text>
+<swiper class='swiper' indicator-dots="{{indicatorDots}}"
+  autoplay="{{true}}"
+  interval="{{5000}}"
+  duration="{{1000}}"
+  circular="{{true}}"
+  >
+  <block wx:for="{{swiperImgs}}" wx:key="*this">
+      <swiper-item>
+        <image wx:if="{{item}}" src="{{item}}" class='slide-image wiper-itemIn' ></image>
+      </swiper-item>
+  </block>
+</swiper>
+<!-- //创建圈子 -->
+<view class='circleC'>
+  <view class='myCircle'>我的圈子</view>
+  <navigator class='buildCircle'url='/pages/tribe/tribeSub/createTribe/createTribe'>
+    创建圈子
+  </navigator>
+
+</view>
+<view>
+<block wx:for="{{listCircles}}" wx:key="item.title">
+  <circleItem
+  image="{{item.icon}}"
+  title="{{item.title}}"
+  subTitle="{{item.subTitle}}"
+  />
+</block>
+</view>

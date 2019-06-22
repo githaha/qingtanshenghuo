@@ -1,0 +1,11 @@
+/* pages/diary/publishVideo.wxss */
+page{
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.vedioRecordC{
+  position: relative;
+  width: 100%;
+  height: 100%;
+}

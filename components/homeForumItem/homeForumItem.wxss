@@ -11,7 +11,9 @@
 
 
 }
-
+.observer {
+  height: 1rpx;
+}
 /* 布局上 */
 .forumItemTop{
 
@@ -26,23 +28,32 @@
 .forumItemTopRB{
   color: rgb(114, 113, 113);
   font-size: 26rpx;
-  margin: 10rpx 15rpx 30rpx 130rpx;
+  margin: 10rpx 15rpx 10rpx 30rpx;
 }
 
 /* 布局下 */
-.forumItemImgs{
+.forumItemImg-default{
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+  
+}
+.forumItemImg-multi{
   display:flex;
   flex-direction: row;
   justify-content: flex-start;
   flex-wrap: wrap;
   width: 100%;
   height: auto;
-  background-color: rgb(243, 244, 245);
+  
 }
 .forumItemImage-default{
   display: inline-block;
-  width: 80%;
-  height: 240rpx;
+  width: 94%;
+  height: 300rpx;
 }
 .forumItemImage-multi{
   display: inline-block;
@@ -69,4 +80,25 @@
 }
 .forumItemBomLab_Img{
   margin-right: 20rpx;
+}
+.videoClass{
+  width: 100%;
+  height: 350rpx;
+}
+.videoClass video{
+  width: 100%;
+  height: 350rpx;
+}
+.controls{
+  width: 100%;
+  height: 350rpx;
+
+}
+
+.videoHoverPlay{
+  
+  right: 40rpx;
+  bottom: 30rpx;
+  width: 50rpx;
+  height: 50rpx;
 }

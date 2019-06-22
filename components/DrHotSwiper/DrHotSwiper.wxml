@@ -1,6 +1,6 @@
 <!--components/DrHotSwiper/DrHotSwiper.wxml-->
 <scroll-view class='hotSwiper'scroll-x="true" scroll-y="false" scroll-with-animation="true">
-  <block wx:for="{{}}">
+  <block wx:for="{{}}" wx:key="item">
   
   </block>
 </scroll-view>

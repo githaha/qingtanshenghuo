@@ -1,0 +1,17 @@
+<!--components/forumReplyItem/forumReplyItem.wxml-->
+<view class='itemPage' catchtap='tapReplyItem'>
+
+<view >
+ <DrUserIntro userType="-min"  userAvatar="{{avator}}" userNickname="{{userNickname}}"></DrUserIntro>
+<labAndImgItem class="forumItemBomLab_Img" item_img ="{{isLike==1?'/common/icons/zans.png':'/common/icons/zan.png'}}" item_lab="{{zanNum}}" catchtap='tapActive'/>
+</view>
+<view class='contentReply'>
+<slot></slot>
+<text >{{replyContent}}</text>
+</view>
+<view class='itemBottom'>
+<label class='createTime'>{{createTime}}</label>
+<label class='replyMore' wx:if="{{replyCount>0}}" catchtap="clickShowAllReply">{{replyCount}}回复</label>
+<label class='labDelete' catchtap='deleteItem'>删除</label>
+</view>
+</view>
