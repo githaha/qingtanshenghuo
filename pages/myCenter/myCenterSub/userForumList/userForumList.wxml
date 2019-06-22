@@ -1,0 +1,25 @@
+<view class='contentList'>
+  <!-- 内容列表 -->
+  <block wx:for="{{listForumData}}" wx:key="{{item.nickname}}">
+  <homeForumItem class="contentListCell" 
+  forumContetnShort ="{{item.forumContetnShort}}"
+   nickname="{{item.nickname}}" 
+   avator ="{{item.avator}}" 
+   subNickname ="{{item.subNickname}}" 
+   forumImages = "{{item.forumImages}}"
+   forumImagesOrigin = "{{item.forumImagesOrigin}}"
+    zanNum="{{item.zanNum}}"
+    createTime="{{item.createTime}}" 
+    commentNum="{{item.commentNum}}" 
+    shareNum="{{item.shareNum}}"
+    userId="{{item.userId}}"
+    idd="{{item.idd}}"
+    isLike="{{item.isLike}}"
+    bindforumZanEvent="clickForumZan" 
+    contentType="{{item.contentType}}"
+    videoSrc="{{item.videoSrc}}" 
+    hoverImg ="{{item.hoverImg}}"
+    bindplayVideo="playVideoStart"
+  ></homeForumItem>
+  </block>
+</view>

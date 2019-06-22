@@ -1,0 +1,6 @@
+/* pages/home/homeSub/fitnessKnowDetail/fitnessKnowDetail.wxss */
+.imageC{
+  position: relative;
+  width: 100%;
+  height: 100%;
+}

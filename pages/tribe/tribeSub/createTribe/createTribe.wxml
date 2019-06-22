@@ -1,0 +1,7 @@
+<view>
+    <view class='circleCover'>
+    <image src='#' class='cirleCoverImg'></image>
+    <view class='circleCoverChange'>更换封面</view>
+    </view>
+    
+</view>

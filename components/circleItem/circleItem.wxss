@@ -1,0 +1,46 @@
+.containC{
+  position: relative;
+  width: 100%;
+  height: 120rpx;
+  border-bottom: 1rpx solid lightgrey;
+}
+.iconC{
+  display: inline-block;
+  width: 80rpx;
+  height: 80rpx;
+  margin: 20rpx;
+}
+.titleC{
+  position: absolute;
+  top: 0rpx;
+  display: inline-flex;
+  flex-direction: column;
+  width: calc(100% - 160rpx);
+  height: 120rpx;
+}
+.titleTop{
+  margin-top: 20rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  font-size:26rpx;
+  color: black;
+}
+.titleBot{
+  height: 40rpx;
+  font-size: 24rpx;
+  line-height: 40rpx;
+  color:darkgray;
+}
+.joinInC{
+
+  position: absolute;
+  height: 44rpx;
+  width: 80rpx;
+  top: 20rpx;
+  right: 40rpx;
+  text-align: center;
+  border-radius: 10rpx;
+  background: rgb(233, 230, 72);
+  line-height: 40rpx;
+  font-size: 25rpx;
+}

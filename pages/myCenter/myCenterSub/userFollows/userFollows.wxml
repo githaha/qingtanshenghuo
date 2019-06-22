@@ -1,0 +1,7 @@
+<view class='containC'>
+  <block wx:for="{{listForumData}}" wx:key="{{item.nickname}}">
+  <DrUserIntro class="DiaryDrUserIntro" userAvatar="{{item.headerImg}}" userNickname="{{item.nickname}}" userSubInfo="{{subNickname}}"
+  userId ="{{item.id}}"
+  ></DrUserIntro>
+  </block>
+</view>

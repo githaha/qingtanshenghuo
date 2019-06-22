@@ -1,0 +1,6 @@
+/* pages/home/homeSub/fitnessFoodDetail/fitnessFoodDetail.wxss */
+.imageC{
+  position: relative;
+  width: 100%;
+  height: 100%;
+}

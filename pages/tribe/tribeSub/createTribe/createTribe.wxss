@@ -1,0 +1,30 @@
+/* pages/tribe/tribeSub/createTribe/createTribe.wxss */
+.circleCover
+{
+  position: relative;
+  width: calc(100% - 30rpx);
+  height: 260rpx;
+  margin: 20rpx 15rpx;
+  background: rebeccapurple;
+}
+.cirleCoverImg
+{
+  width: 100%;
+  height: 100%;
+  background: red;
+}
+.circleCoverChange
+{
+  position: absolute;
+  height: 34rpx;
+  padding: 3rpx 5rpx;
+  border-radius: 8rpx;
+  bottom: 30rpx;
+  right: 20rpx;
+  background: rgba(21, 78, 21, 0.336);
+  z-index: 1000;
+  font-size: 22rpx;
+  line-height: 34rpx;
+  vertical-align: middle;
+  color: white;
+}

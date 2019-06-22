@@ -1,0 +1,6 @@
+<view class='imageC'>
+<navigator url='../fitnessFoodDetail/fitnessFoodDetail'>
+<image style='width:100%;' src='/common/images/WechatIMG150.jpeg' mode='widthFix' ></image>
+</navigator>
+
+</view>

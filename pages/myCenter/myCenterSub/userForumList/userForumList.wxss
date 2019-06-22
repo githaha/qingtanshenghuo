@@ -1,0 +1,12 @@
+/* pages/myCenter/myCenterSub/userForumList/userForumList.wxss */
+.contentList{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.contentListCell{
+  margin-top: 10px;
+}

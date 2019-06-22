@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "homeForumItem": "/components/homeForumItem/homeForumItem"
+  }
+}

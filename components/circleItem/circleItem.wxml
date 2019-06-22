@@ -1,0 +1,8 @@
+<view class='containC'>
+<image class='iconC' src='{{image}}'></image>
+<view class='titleC'>
+  <label class='titleTop'>{{title}}</label>
+  <label class='titleBot'>{{subTitle}}</label>
+</view>
+<view class='joinInC'>加入</view>
+</view>
